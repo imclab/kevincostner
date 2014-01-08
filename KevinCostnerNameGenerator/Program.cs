@@ -11,7 +11,7 @@ namespace KevinCostnerNameGenerator
 
         static string getName()
         {
-            Console.WriteLine("Enter your name: >");
+            Console.Write("Enter your name: >");
             return Console.ReadLine();
         }
 
