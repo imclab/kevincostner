@@ -1,19 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KevinCostnerNameGenerator
 {
     class Program
     {
-
-        static string getName()
-        {
-            
-            return Console.ReadLine();
-        }
 
 
         private static string generateName(string original)
