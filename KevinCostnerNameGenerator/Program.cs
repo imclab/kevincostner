@@ -11,8 +11,16 @@ namespace KevinCostnerNameGenerator
 
         static string getName()
         {
-            Console.Write("Enter your name: >");
+            
             return Console.ReadLine();
+        }
+
+        static void help()
+        {
+            Console.WriteLine("#########################");
+            Console.WriteLine("HELP:");
+            Console.WriteLine("Write your name and press ENTER.");
+            Console.WriteLine("#########################");
         }
 
         static void Main(string[] args)
@@ -21,22 +29,21 @@ namespace KevinCostnerNameGenerator
             Console.WriteLine("Kevin Costner Name Generator v0.1");
             Console.WriteLine("© 2014 CO-SKY Project, University of Jyväskylä");
 
-            var name = getName();
-
             Console.WriteLine("Generated name: Kevin Costner");
             Console.WriteLine("");
             Console.WriteLine("Write 'help' for help.");
 
-            Console.Write(">");
-            var input = Console.ReadLine();
-            if ("help".Equals(input))
+            while (true)
             {
-                Console.WriteLine("#########################");
-                Console.WriteLine("HELP:");
-                Console.WriteLine("Write your name and press ENTER.");
-                Console.WriteLine("#########################");
-            }
+                Console.Write("Enter your name: >");
 
+                var input = Console.ReadLine();
+
+                if ("help".Equals(input))
+                {
+                    help();
+                }
+            }
             Console.Read();
         }
     }
