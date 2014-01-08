@@ -27,8 +27,9 @@ namespace KevinCostnerNameGenerator
             Console.WriteLine("© 2014 CO-SKY Project, University of Jyväskylä");
 
             var name = getName();
+            var newname = generateName(name);
 
-            Console.WriteLine("Generated name: Kevin Costner");
+            Console.WriteLine("Generated name: " + newname);
         }
     }
 }
