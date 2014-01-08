@@ -26,6 +26,7 @@ namespace KevinCostnerNameGenerator
             Console.WriteLine("#########################");
             Console.WriteLine("HELP:");
             Console.WriteLine("Write your name and press ENTER.");
+            Console.WriteLine("Type 'help' to see this help and 'quit' to quit.");
             Console.WriteLine("#########################");
         }
 
@@ -49,13 +50,16 @@ namespace KevinCostnerNameGenerator
                 {
                     help();
                 }
+                else if ("quit".Equals(input))
+                {
+                    return;
+                }
                 else
                 {
                     var newname = generateName(input);
                     Console.WriteLine("Generated name: " + newname);
                 }
             }
-            Console.Read();
         }
     }
 }
