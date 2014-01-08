@@ -15,6 +15,12 @@ namespace KevinCostnerNameGenerator
             return Console.ReadLine();
         }
 
+
+        private static string generateName(string original)
+        {
+            return original + " Costner";
+        }
+
         static void help()
         {
             Console.WriteLine("#########################");
@@ -42,6 +48,11 @@ namespace KevinCostnerNameGenerator
                 if ("help".Equals(input))
                 {
                     help();
+                }
+                else
+                {
+                    var newname = generateName(input);
+                    Console.WriteLine("Generated name: " + newname);
                 }
             }
             Console.Read();
