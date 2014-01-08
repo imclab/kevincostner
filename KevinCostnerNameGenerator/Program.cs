@@ -31,7 +31,7 @@ namespace KevinCostnerNameGenerator
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Kevin Costner Name Generator v0.1");
+            Console.WriteLine("Kevin Costner Name Generator v1.0");
             Console.WriteLine("© 2014 CO-SKY Project, University of Jyväskylä");
 
             Console.WriteLine("Generated name: Kevin Costner");
