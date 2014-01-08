@@ -15,6 +15,11 @@ namespace KevinCostnerNameGenerator
             return Console.ReadLine();
         }
 
+        static string generateName(string original)
+        {
+            return original + " Costner";
+        }
+
         static void Main(string[] args)
         {
 
