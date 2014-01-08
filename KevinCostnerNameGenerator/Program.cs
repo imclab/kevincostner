@@ -15,6 +15,9 @@ namespace KevinCostnerNameGenerator
             return Console.ReadLine();
         }
 
+        /// <summary>
+        /// Super cool help method.
+        /// </summary>
         static void help()
         {
             Console.WriteLine("#########################");
@@ -23,6 +26,10 @@ namespace KevinCostnerNameGenerator
             Console.WriteLine("#########################");
         }
 
+        /// <summary>
+        /// Application that generates cool Kevin Costner names.
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
 
