@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace KevinCostnerNameGenerator
 {
     class Program
     {
 
-        static string getName()
+
+        private static string generateName(string original)
         {
-            
-            return Console.ReadLine();
+            return original + " Costner";
         }
+
 
         /// <summary>
         /// Super cool help method.
@@ -23,6 +20,7 @@ namespace KevinCostnerNameGenerator
             Console.WriteLine("#########################");
             Console.WriteLine("HELP:");
             Console.WriteLine("Write your name and press ENTER.");
+            Console.WriteLine("Type 'help' to see this help and 'quit' to quit.");
             Console.WriteLine("#########################");
         }
 
@@ -50,8 +48,16 @@ namespace KevinCostnerNameGenerator
                 {
                     help();
                 }
+                else if ("quit".Equals(input))
+                {
+                    return;
+                }
+                else
+                {
+                    var newname = generateName(input);
+                    Console.WriteLine("Generated name: " + newname);
+                }
             }
-            Console.Read();
         }
     }
 }
