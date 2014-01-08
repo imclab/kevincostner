@@ -49,13 +49,16 @@ namespace KevinCostnerNameGenerator
                 {
                     help();
                 }
+                else if ("quit".Equals(input))
+                {
+                    return;
+                }
                 else
                 {
                     var newname = generateName(input);
                     Console.WriteLine("Generated name: " + newname);
                 }
             }
-            Console.Read();
         }
     }
 }
