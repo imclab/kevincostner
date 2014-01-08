@@ -30,6 +30,8 @@ namespace KevinCostnerNameGenerator
             var newname = generateName(name);
 
             Console.WriteLine("Generated name: " + newname);
+
+            Console.ReadKey();
         }
     }
 }
