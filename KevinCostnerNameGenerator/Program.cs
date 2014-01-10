@@ -17,11 +17,11 @@ namespace KevinCostnerNameGenerator
         /// </summary>
         static void help()
         {
-            Console.WriteLine("#########################");
+            Console.WriteLine("-------------------------------------------------");
             Console.WriteLine("HELP:");
             Console.WriteLine("Write your name and press ENTER.");
             Console.WriteLine("Type 'help' to see this help and 'quit' to quit.");
-            Console.WriteLine("#########################");
+            Console.WriteLine("-------------------------------------------------");
         }
 
         /// <summary>
